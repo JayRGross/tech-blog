@@ -1,0 +1,16 @@
+<div class="container mt-5">
+    <form>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" name="title" value="{{post.title}}" id="title">
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label">Content</label>
+            <textarea class="form-control" id="content" style="height: 200px">{{post.content}}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary update-post" id="{{post.id}}">UPDATE</button>
+        <button type="submit" class="btn btn-danger delete-post" id="{{post.id}}">DELETE</button>
+    </form>
+</div>
+
+<script src="/public/js/dashboard.js"></script>
